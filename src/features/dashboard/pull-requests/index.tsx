@@ -5,7 +5,7 @@ import { CardSkeleton } from "src/components/Card/skeleton";
 import { useQuery } from "src/utils/use-delayed-query";
 
 export const PullRequests = () => {
-  const { loading, data } = useQuery(PULL_REQUESTS_QUERY, {}, 1500);
+  const { loading, data } = useQuery(PULL_REQUESTS_QUERY, {}, 2100);
 
   if (loading) {
     return <CardSkeleton />;

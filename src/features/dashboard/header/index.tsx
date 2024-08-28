@@ -1,11 +1,11 @@
 import React from "react";
-import { VIEWER_QUERY } from "./graphql/query";
+import { HEADER_QUERY } from "./graphql/query";
 import { Header as HeaderComponent } from "src/components/Header";
 import { HeaderSkeleton } from "src/components/Header/skeleton";
 import { useQuery } from "src/utils/use-delayed-query";
 
 export const Header: React.FC = () => {
-  const { loading, data } = useQuery(VIEWER_QUERY);
+  const { loading, data } = useQuery(HEADER_QUERY, {}, 1500);
 
   if (loading) {
     return <HeaderSkeleton />;

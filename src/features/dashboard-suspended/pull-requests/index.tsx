@@ -4,7 +4,7 @@ import { PULL_REQUESTS_QUERY } from "./graphql/query";
 import { useSuspenseQuery } from "src/utils/use-delayed-suspense-query";
 
 export const PullRequests = () => {
-  const { data } = useSuspenseQuery(PULL_REQUESTS_QUERY, {});
+  const { data } = useSuspenseQuery(PULL_REQUESTS_QUERY, {}, 2100);
 
   if (!data) return null;
 

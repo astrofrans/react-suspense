@@ -1,7 +1,7 @@
 import { gql } from "@apollo/client";
 
-export const VIEWER_QUERY = gql`
-  query viewerQuery {
+export const HEADER_QUERY = gql`
+  query headerQuery {
     viewer {
       id
       login
