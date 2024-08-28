@@ -8,8 +8,6 @@ const httpLink = createHttpLink({
 });
 
 const authLink = setContext((_, { headers }) => {
-  // XXX: This is bad practice and it MUST be removed.
-  // The token should be fetched either from .env or from local storage.
   const token = BEARER_TOKEN;
   return {
     headers: {
