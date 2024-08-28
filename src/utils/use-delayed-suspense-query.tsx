@@ -10,8 +10,8 @@ const waitUntil = (ms: number) =>
  * By default queries will be delayed by 1000ms (1 second)
  */
 export const useSuspenseQuery = (query, options = {}, delay = 1000) => {
-  const apolloRes = useApolloSuspenseQuery(query, {});
-  
+  const apolloRes = useApolloSuspenseQuery<any>(query, {});
+
   /**
    * This is an absolutely terrible way to do this, but it's just for demo purposes,
    * and piggy-backing on the @tanstack/react-query Suspense API made this a whole lot easier
