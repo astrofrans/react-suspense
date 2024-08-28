@@ -6,8 +6,6 @@ import { useSuspenseQuery } from "src/utils/use-delayed-suspense-query";
 export const Issues = () => {
   const { data } = useSuspenseQuery(ISSUES_QUERY);
 
-  if (!data) return null;
-
   const count = data.viewer.issues.totalCount;
 
   return (

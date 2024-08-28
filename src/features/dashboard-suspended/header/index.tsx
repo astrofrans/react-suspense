@@ -6,8 +6,6 @@ import { useSuspenseQuery } from "src/utils/use-delayed-suspense-query";
 export const Header: React.FC = () => {
   const { data } = useSuspenseQuery(HEADER_QUERY, {}, 1500);
 
-  if (!data?.viewer?.login) return null;
-
   const { login, url, avatarUrl } = data.viewer;
 
   return <HeaderComponent login={login} url={url} avatarUrl={avatarUrl} />;

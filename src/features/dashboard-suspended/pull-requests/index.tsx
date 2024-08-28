@@ -6,8 +6,6 @@ import { useSuspenseQuery } from "src/utils/use-delayed-suspense-query";
 export const PullRequests = () => {
   const { data } = useSuspenseQuery(PULL_REQUESTS_QUERY, {}, 2100);
 
-  if (!data) return null;
-
   const count = data.viewer.pullRequests.totalCount;
 
   return (
