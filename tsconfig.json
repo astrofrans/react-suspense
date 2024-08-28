@@ -1,0 +1,22 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "esnext",
+    "jsx": "react",
+    "moduleResolution": "bundler",
+    "sourceMap": false,
+    "outDir": ".code",
+    "importHelpers": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    "types": ["node"],
+    "rootDir": ".",
+    "baseUrl": ".",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
+  },
+  "exclude": ["node_modules"]
+}
