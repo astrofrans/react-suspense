@@ -16,7 +16,7 @@ async function renderApp(Component: React.FC) {
     const root = createRoot(container);
     root.render(
       <BrowserRouter basename="/">
-        <title>React@18 Suspense demo</title>
+        <title>React@19 Suspense demo</title>
         <QueryClientProvider client={queryClient}>
           <ApolloProvider client={client}>
             <Routes>

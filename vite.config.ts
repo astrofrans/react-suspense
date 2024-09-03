@@ -4,7 +4,7 @@ import basicSsl from "@vitejs/plugin-basic-ssl";
 
 const GITHUB_CLIENT_URI = "https://api.github.com/graphql"
 const HOST = "dev.reactsuspense.io";
-const PORT = 4000;
+const PORT = 3000;
 
 export default defineConfig(() => ({
   plugins: [

@@ -16,7 +16,7 @@ Without this the vite bundler will fail to start the application on its intended
 
 > npm i && npm run start
 
-This will start the dev server at `https://dev.reactsuspense.io:4000/app`.
+This will start the dev server at `https://dev.reactsuspense.io:3000/app`.
 
 The dev server creates self signed certificates which needs to be added to your keychain in order to run `https`. Open `{node_modules}/.vite/.basic-ssl/_cert.pem` with Keychain Access.In Keychain Access, double click the certificate and under the collapsible section _"Trust"_ select _"Always trust"_ in the select menu labelled _"When using this certificate"_.
 
